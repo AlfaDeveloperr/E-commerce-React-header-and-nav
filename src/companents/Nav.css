@@ -1,0 +1,61 @@
+.search-input:focus {
+  border-color: orange !important;
+  /* Burada turuncu sınır rengi belirledik */
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25) !important;
+  /* Turuncu gölge */
+}
+
+.search-history {
+  border: 2px solid #f27a1a;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #fff;
+  position: absolute;
+  top: 70px;
+  left: 32.5%;
+  letter-spacing: 1.3px;
+  z-index: 2000;
+  padding: 10px 15px 15px 15px !important;
+  width: 32%;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-history li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: fit-content;
+  border-radius: 4px;
+  border: solid 1px #e6e6e6;
+  padding: 8px 12px 8px 12px;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  color: sienna;
+}
+
+.search-history li:hover {
+  border: rgb(238, 176, 62) 1.5px solid;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-history {
+    border: 2px solid #f27a1a;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 110px;
+    left: 5%;
+    letter-spacing: 1.3px;
+    z-index: 2000;
+    padding: 10px 15px 15px 15px !important;
+    width: 90%;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
